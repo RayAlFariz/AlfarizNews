@@ -1,0 +1,148 @@
+:root {
+  --bg: #540b0e;
+  --primer: #e09f3e;
+}
+
+body {
+  font-family: "Noto Sans";
+  background-color: var(--bg);
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  padding: 1.4rem 7%;
+  border-bottom: 1px solid var(--primer);
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(84, 11, 14, 0.8);
+  z-index: 99999999;
+}
+nav .nav-logo {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-style: italic;
+}
+nav a span,
+.header .content h1 span {
+  color: var(--primer);
+}
+.header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(https://i.pinimg.com/originals/82/17/71/821771d9030372167e70d4867d80c7d3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 5.6rem -0.5rem 0;
+}
+.header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(84, 11, 14, 0.8) 5%, rgba(255, 255, 255, 0) 50%);
+}
+.header .content {
+  padding: 1rem 7%;
+  max-width: 60rem;
+  color: white;
+}
+.header .content h1 {
+  margin-bottom: -1rem;
+  font-size: 2.5rem;
+  opacity: 100%;
+}
+.header .content a {
+  background-color: var(--primer);
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #540b0e;
+}
+.about,
+.konten-1,
+.konten-2,
+.konten-3,
+.konten-4 {
+  padding: 7rem 7% 1.4rem;
+}
+.about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+.about .row,
+.konten-1 .siaga,
+.konten-2 .penggalang,
+.konten-3 .penegak,
+.konten-4 .pandega {
+  display: flex;
+}
+.about .row .img-row,
+.konten-1 .siaga img,
+.konten-2 .penggalang img,
+.konten-3 .penegak img,
+.konten-4 .pandega img {
+  flex: 1 1 45rem;
+}
+.about .row .img-row img,
+.konten-1 .siaga img,
+.konten-2 .penggalang img,
+.konten-3 .penegak img,
+.konten-4 .pandega img {
+  margin-right: 2.5rem;
+  width: 600px;
+  height: 450px;
+  border-radius: 10px;
+}
+.about .row .content p,
+.konten-1 .siaga p,
+.konten-2 .penggalang p,
+.konten-3 .penegak p .konten-4 .pandega p {
+  text-align: justify;
+  overflow: auto;
+  height: 30rem;
+}
+.konten-1 h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.konten-1 h3,
+.kontent-2 h3,
+.konten-3 h3,
+.konten-4 h3 {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.akhir {
+  background-color: var(--primer);
+  text-align: center;
+  padding: 1rem 0 1rem;
+  margin-top: 3.5rem;
+  background-size: cover;
+}
+.akhir .sosial a,
+.akhir .credit a {
+  color: white;
+  margin: 0.5rem;
+  text-decoration: none;
+}
+.akhir .sosial a:hover,
+.akhir .credit a:hover {
+  color: var(--bg);
+  transition: 0.5s;
+}
